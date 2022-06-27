@@ -1,0 +1,188 @@
+p {
+  color: #fff;
+  font-family: 'Staatliches', cursive;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin: 0 50px;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: 'Staatliches', cursive;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Backgrounds section */
+.bg-img {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7a5a3db7-fb07-4532-aa4c-93f5a5d5d651/dak30pj-14691a0b-8032-47b7-880c-aa46d5c18c0e.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi83YTVhM2RiNy1mYjA3LTQ1MzItYWE0Yy05M2Y1YTVkNWQ2NTEvZGFrMzBwai0xNDY5MWEwYi04MDMyLTQ3YjctODgwYy1hYTQ2ZDVjMThjMGUuZ2lmIn1dXX0.CGGCFOOpC22B9nPfwOyyi6lL7a9lxTzUGeN6MXk4tMU);
+  min-height: 450px;
+}
+
+.bg {
+  width: 100%;
+  height: 48.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg,
+      rgba(59, 173, 227, 1) 0%,
+      rgba(87, 111, 230, 1) 25%,
+      rgba(152, 68, 183, 1) 51%,
+      rgba(255, 53, 127, 1) 100%);
+  animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0 50%
+  }
+}
+
+/* Navbar section */
+.nav-item a {
+  color: #f542d4;
+  font-size: 30px;
+  font-family: 'Staatliches', cursive;
+}
+
+.topnav a:hover {
+  background-color: #b942f5;
+  color: #fff;
+}
+
+.nav-img {
+  width: 6%;
+}
+
+/* introduction Section */
+.container-fluid {
+  padding: 0 0;
+}
+
+.intro-text {
+  position: absolute;
+  font-size: 50px;
+  font-family: 'Staatliches', cursive;
+  color: #fff;
+  padding: 30px;
+  top: 450px;
+  bottom: 350px;
+}
+
+.potions-size {
+  width: 20%;
+}
+
+.h3-hp {
+  color: #FF0000;
+}
+
+.h3-mana {
+  color: #00FFD8;
+  margin-top: 10px;
+}
+
+#introduction .row {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.hp-potion {
+  transform: rotate(70deg);
+}
+
+.coin-img {
+  width: 10%;
+  margin-top: 10px;
+}
+
+/* Fooster Section */
+#footer {
+  text-align: center;
+}
+
+.fooster-icon {
+  margin: 1%;
+  color: white;
+  font-size: 20px;
+}
+
+.fooster {
+  font-size: 1rem;
+}
+
+.container-fluid #footer {
+  margin-top: 99px;
+}
+
+/* Mobile / Tablet section */
+@media (min-width: 992px) and (max-width: 1160px) {
+  .row {
+    position: absolute;
+  }
+
+  .intro-text {
+    top: 450px;
+  }
+
+  .container-fluid #footer {
+    margin-top: 400px;
+  }
+
+  .coin-img {
+    position: absolute;
+    margin-top: 280px;
+    text-align: center;
+  }
+
+  .coint-img {
+    position: absolute;
+    margin-top: 270px;
+    text-align: center;
+    width: 10%;
+  }
+
+  .center {
+    margin-left: 60px;
+  }
+
+  .mobile-s {
+    width: 40%;
+    position: absolute;
+  }
+}
+
+@media (max-width: 992px) {
+  .title-img {
+    width: 50%;
+    transform: rotate(0deg);
+    position: static;
+  }
+
+  .container-fluid {
+    text-align: center;
+  }
+
+  .container-fluid #footer {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  #introduction .row {
+    margin-top: 120px;
+  }
+
+  .bg {
+    height: 80rem;
+  }
+}
